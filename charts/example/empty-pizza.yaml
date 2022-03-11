@@ -1,0 +1,6 @@
+apiVersion: restaurant.yang-wang11.info/v1alpha1
+kind: Pizza
+metadata:
+  name: salami
+spec:
+
