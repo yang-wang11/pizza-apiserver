@@ -27,8 +27,8 @@ import (
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
 
-	"github.com/yang-wang11/pizza-apiserver/pkg/admission/plugin/pizzatoppings"
 	"github.com/yang-wang11/pizza-apiserver/pkg/admission/custominitializer"
+	"github.com/yang-wang11/pizza-apiserver/pkg/admission/plugin/pizzatoppings"
 	"github.com/yang-wang11/pizza-apiserver/pkg/apis/restaurant/v1alpha1"
 	"github.com/yang-wang11/pizza-apiserver/pkg/apiserver"
 	clientset "github.com/yang-wang11/pizza-apiserver/pkg/generated/clientset/versioned"

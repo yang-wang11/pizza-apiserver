@@ -17,9 +17,9 @@ limitations under the License.
 package v1alpha1
 
 import (
+	"github.com/yang-wang11/pizza-apiserver/pkg/apis/restaurant"
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
-	"github.com/yang-wang11/pizza-apiserver/pkg/apis/restaurant"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {
@@ -43,7 +43,7 @@ func Convert_v1alpha1_PizzaSpec_To_restaurant_PizzaSpec(in *PizzaSpec, out *rest
 		}
 		idx[top] = len(out.Toppings)
 		out.Toppings = append(out.Toppings, restaurant.PizzaTopping{
-			Name: top,
+			Name:     top,
 			Quantity: 1,
 		})
 	}

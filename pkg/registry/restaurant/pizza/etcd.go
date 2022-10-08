@@ -17,11 +17,11 @@ limitations under the License.
 package pizza
 
 import (
+	"github.com/yang-wang11/pizza-apiserver/pkg/apis/restaurant"
+	"github.com/yang-wang11/pizza-apiserver/pkg/registry"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/registry/generic"
 	genericregistry "k8s.io/apiserver/pkg/registry/generic/registry"
-	"github.com/yang-wang11/pizza-apiserver/pkg/apis/restaurant"
-	"github.com/yang-wang11/pizza-apiserver/pkg/registry"
 )
 
 // NewREST returns a RESTStorage object that will work against API services.
